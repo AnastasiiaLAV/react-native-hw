@@ -10,6 +10,7 @@ import {
     Alert,
     Button, 
     Text,
+    ImageBackground,
 } from "react-native";
 
 export default function RegistrationScreen() {
@@ -26,6 +27,7 @@ export default function RegistrationScreen() {
     return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
     <View style={styles.container}>
+    
         <Text>Регистрация</Text>
         <KeyboardAvoidingView
             behavior={Platform.OS == "ios" ? "padding" : "height"}
@@ -76,4 +78,5 @@ const styles = StyleSheet.create({
         borderColor: "black",
         marginBottom: 10,
         },
+        
     });
